@@ -10,6 +10,6 @@ class Vegetable < ApplicationRecord
     end
 
     average_rating = total/number_of_ratings
-    super(options).merge(average_rating: average_rating)
+    super(options.merge(average_rating: average_rating))
   end
 end
